@@ -1,3 +1,14 @@
+# Test coverage startup
+if ENV['CODECLIMATE_REPO_TOKEN'] # For delicious CodeClimate coverage
+  require "codeclimate-test-reporter"
+  CodeClimate::TestReporter.start
+elsif ENV['SIMPLECOV']
+  # Set the environment variable if you want to generate a detailed
+  # coverage report on your local box
+  require "simplecov"
+  SimpleCov.start
+end
+
 def stub_random_iv
   before do
     cipher = OpenSSL::Cipher::Cipher.new(ClaimToken.configuration.cipher_type)
