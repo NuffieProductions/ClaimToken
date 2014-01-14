@@ -24,13 +24,15 @@ Or install it yourself as:
       config.digest_secret = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
     end
 
-To encrypt a token:
+To encrypt and encode a claim token:
 
-    ClaimToken.encrypt(token)
+    token = {"your_permissions" => "I HAZ THEM", "expires" => "2014-01-14T01:26:07Z"}
+    ClaimToken.pack(token)
 
-To decrypt a token:
+To decode and decrypt a claim token:
 
-    ClaimToken.decrypt(encrypted_token)
+    packed_token = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX..."
+    ClaimToken.extract(packed_token)
 
 ## Contributing
 
