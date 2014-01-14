@@ -1,5 +1,5 @@
-require 'claim_token'
 require 'spec_helper'
+require 'claim_token'
 
 describe ClaimToken::Encryptor do
   use_test_configuration
