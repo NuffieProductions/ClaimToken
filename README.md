@@ -1,3 +1,6 @@
+[![Code Climate](https://codeclimate.com/github/NuffieProductions/ClaimToken.png)](https://codeclimate.com/github/NuffieProductions/ClaimToken)
+<img src="https://circleci.com/gh/NuffieProductions/ClaimToken.png?circle-token=39bd4a9416dd8d9f3f7f647d63565297e2e77a11" />
+
 # ClaimToken
 
 ClaimToken encrypts and signs tokens to be used in a claim-based authentication system
