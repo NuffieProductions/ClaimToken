@@ -2,16 +2,7 @@ require 'spec_helper'
 require 'claim_token'
 
 describe ClaimToken::Decryptor do
-  before do
-    ClaimToken.configure do |config|
-      config.shared_encryption_key = "uFeb25D_z0BAGhgH7WKy8QBSat6kxfDa6PrKw1ox69U="
-      config.digest_secret = "d22b90c9172649eaf49cd185f73bd4a53ec3ff4dc6f7d51f9dbaac62421e6dd297b38efcd431a7f2"
-    end
-  end
-
-  after do
-    restore_default_config
-  end
+  use_test_configuration
 
   describe :decrypt do
 
