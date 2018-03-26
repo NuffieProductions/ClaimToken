@@ -11,16 +11,16 @@ Gem::Specification.new do |spec|
   spec.description   = %q{ClaimToken encrypts and signs tokens to be used in a claim-based authentication system}
   spec.summary       = %q{Encrypt heem! Sign heem! Claim heem!}
   spec.homepage      = "http://github.com/NuffieProductions/ClaimToken"
-  spec.license       = "Apache 2.0"
+  spec.license       = "Apache-2.0"
 
   spec.files         = `git ls-files`.split($/)
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.required_ruby_version = '>= 1.9.3'
+  spec.required_ruby_version = '>= 2.3.6'
   spec.add_development_dependency "bundler", "~> 1.3"
-  spec.add_development_dependency "rake"
-  spec.add_development_dependency "rspec"
-  spec.add_development_dependency "codeclimate-test-reporter"
+  spec.add_development_dependency "rake", "~> 12.3"
+  spec.add_development_dependency "rspec", "~> 3.7"
+  spec.add_development_dependency "codeclimate-test-reporter", "~> 1.0"
 end
