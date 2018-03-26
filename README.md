@@ -1,5 +1,3 @@
-[![Code Climate](https://codeclimate.com/github/NuffieProductions/ClaimToken.png)](https://codeclimate.com/github/NuffieProductions/ClaimToken)
-[![Coverage](https://codeclimate.com/repos/52d4a365e30ba00f2700256c/badges/e0b32fe49c4b5695cdf1/coverage.png)](https://codeclimate.com/github/NuffieProductions/ClaimToken)
 [![Gem Version](https://badge.fury.io/rb/claim_token.png)](http://badge.fury.io/rb/claim_token)
 <br/>
 <img src="https://circleci.com/gh/NuffieProductions/ClaimToken.png?circle-token=39bd4a9416dd8d9f3f7f647d63565297e2e77a11" />

@@ -1,8 +1,5 @@
 # Test coverage startup
-if ENV['CODECLIMATE_REPO_TOKEN'] # For delicious CodeClimate coverage
-  require "codeclimate-test-reporter"
-  CodeClimate::TestReporter.start
-elsif ENV['SIMPLECOV']
+if ENV['SIMPLECOV']
   # Set the environment variable if you want to generate a detailed
   # coverage report on your local box
   require "simplecov"
