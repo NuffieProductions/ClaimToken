@@ -12,8 +12,8 @@ end
 def stub_random_iv
   before do
     cipher = OpenSSL::Cipher::Cipher.new(ClaimToken.configuration.cipher_type)
-    cipher.stub(random_iv: "\nK\x0F^1X\xE6\x8A'\xDBf\xB8\x93i\xA3\x9D")
-    OpenSSL::Cipher::Cipher.stub(new: cipher)
+    allow(cipher).to receive(:random_iv).and_return("\nK\x0F^1X\xE6\x8A'\xDBf\xB8\x93i\xA3\x9D")
+    allow(OpenSSL::Cipher::Cipher).to receive(:new).and_return(cipher)
   end
 end
 
