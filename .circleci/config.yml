@@ -15,19 +15,9 @@ jobs:
         name: Which bundler?
         command: bundle -v
 
-    # Restore bundle cache
-    - restore_cache:
-        keys:
-          - claim-token-bundle-{{ checksum "Gemfile.lock" }}
-
     - run:
         name: Bundle Install
         command: bundle check || bundle install --jobs=4 --retry=3 --path=$BUNDLE_PATH
-
-    - save_cache:
-        key: claim-token-bundle-{{ checksum "Gemfile.lock" }}
-        paths:
-          - vendor/bundle
 
     - run:
         name: Running tests...
