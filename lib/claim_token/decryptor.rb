@@ -39,7 +39,7 @@ module ClaimToken
     end
 
     def encryption_key
-      raise "MissingKeyException : ClaimToken configuration is missing the shared_encryption_key" unless ClaimToken.configuration.shared_encryption_key.present?
+      raise "MissingKeyException : ClaimToken configuration is missing the shared_encryption_key" if ClaimToken.configuration.shared_encryption_key.nil?
       ClaimToken.configuration.shared_encryption_key
     end
 

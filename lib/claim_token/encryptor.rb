@@ -37,12 +37,12 @@ module ClaimToken
     end
 
     def cipher_type
-      raise "MissingKeyException : ClaimToken configuration is missing the cipher_type" unless ClaimToken.configuration.cipher_type.present?
+      raise "MissingKeyException : ClaimToken configuration is missing the cipher_type" if ClaimToken.configuration.cipher_type.nil?
       ClaimToken.configuration.cipher_type
     end
 
     def encryption_key
-      raise "MissingKeyException : ClaimToken configuration is missing the shared_encryption_key" unless ClaimToken.configuration.shared_encryption_key.present?
+      raise "MissingKeyException : ClaimToken configuration is missing the shared_encryption_key" if ClaimToken.configuration.shared_encryption_key.nil?
       ClaimToken.configuration.shared_encryption_key
     end
 
