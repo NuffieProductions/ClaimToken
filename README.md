@@ -24,7 +24,7 @@ Or install it yourself as:
 
     ClaimToken.configure do |config|
       config.cipher_type = "aes-256-cbc"  # this is the default
-      config.shared_encryption_key = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+      config.shared_encryption_key = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" # 32 byte key required
       config.digest_secret = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
     end
 
