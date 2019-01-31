@@ -10,9 +10,9 @@ describe ClaimToken::Encryptor do
       {
         "type" => "EncryptedMessage",
         "cipher" => "aes-256-cbc",
-        "data" => "P_2kgNhGBCu2WaF5lM3foW-tGdaJ3O_5tYSmhqg7rtI=",
+        "data" => "swfTPYQu9WYYhJAu00WIPrmrnmdcZI9928AHhGMetJg=",
         "iv" => "CksPXjFY5oon22a4k2mjnQ==",
-        "signature" => "25efcdc87bae25dd0844a74db58462640d705f11",
+        "signature" => "6d5ad5e8132424a0e399294cd4ff6c0d357f5055",
       }
     }
 
