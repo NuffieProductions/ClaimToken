@@ -6,7 +6,7 @@ require 'claim_token/version'
 Gem::Specification.new do |spec|
   spec.name          = "claim_token"
   spec.version       = ClaimToken::VERSION
-  spec.authors       = ["CricHQ"]
+  spec.authors       = ["Daniel Zollinger", "Ben Greville"]
   spec.email         = ["ben.greville@crichq.com"]
   spec.description   = %q{ClaimToken encrypts and signs tokens to be used in a claim-based authentication system}
   spec.summary       = %q{Encrypt heem! Sign heem! Claim heem!}
