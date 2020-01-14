@@ -26,7 +26,7 @@ module ClaimToken
     end
 
     def build_cipher token
-      cipher = OpenSSL::Cipher::Cipher.new( token.fetch("cipher") )
+      cipher = OpenSSL::Cipher.new( token.fetch("cipher") )
       cipher.decrypt
       cipher.key = encryption_key
       cipher.iv = decode(token.fetch("iv"))

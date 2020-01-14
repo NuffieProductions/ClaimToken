@@ -29,7 +29,7 @@ module ClaimToken
     end
 
     def build_cipher
-      cipher = OpenSSL::Cipher::Cipher.new(cipher_type)
+      cipher = OpenSSL::Cipher.new(cipher_type)
       cipher.encrypt
       cipher.key = encryption_key
       cipher.iv = iv = cipher.random_iv
